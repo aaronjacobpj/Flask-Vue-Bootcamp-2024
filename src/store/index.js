@@ -1,0 +1,100 @@
+import { createStore } from "vuex";
+
+const store = createStore({
+    state() {
+        return {
+            courses: [
+                {
+                    name: "Flask",
+                    "base-url": "/weeks/bootcamp/MAD l/",
+                    sessions: [
+                        {
+                         "source-code": "Day 0.zip",
+                         "youtube-video-id": "YkpTsFRJm7g",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 0"
+                        },
+                        {
+                         "source-code": "Day 1.zip",
+                         "youtube-video-id": "qsdZjIMWj-U",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 1"
+                        },
+                        {
+                         "source-code":"Day 2.zip",
+                         "youtube-video-id": "EKsmJsf_O0M",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 2"
+                        },
+                        {
+                         "source-code": "Day 3.zip",
+                         "youtube-video-id": "nZUGQc37qLg",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 3"
+                        },
+                        {
+                         "source-code": "Day 4.zip",
+                         "youtube-video-id": "mSxGdnAq4W4",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 4"
+                        },
+                        {
+                         "source-code": "Day 5.zip",
+                         "youtube-video-id": "ZGzJH1ZuoKE",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and HTML - Day 5"
+                        }
+                    ]
+
+                },
+                {
+                    name: "Vue",
+                    "base-url": "/weeks/bootcamp/MAD ll/",
+                    sessions: [
+                        {
+                         "source-code": "Day 0.zip",
+                         "youtube-video-id": "sWKKW_S8U8A",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+                        },
+                        {
+                         "source-code": "Day 1.zip",
+                         "youtube-video-id": "Jpqm5tCnCqA",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+                        },
+                        {
+                         "source-code": "Day 2.zip",
+                         "youtube-video-id": "iEiGdPmz0K4",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and Vue - Day 2"
+                        },
+                        {
+                         "source-code": "Day 3.zip",
+                         "youtube-video-id": "dpIcjpGw_G4",
+                         "notes": "",
+                         "slides": "",
+                         "name": "Web Development Bootcamp Using Flask and Vue - Day 3"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    getters: {
+        getCourses(state) {
+            return state.courses;
+        }
+    }
+})
+
+export default store;
