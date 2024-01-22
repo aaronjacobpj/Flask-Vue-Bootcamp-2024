@@ -8,8 +8,7 @@
       <div class="container-fluid" style="padding-top: 2%;">
         <h2> Hi, There!</h2>
         <p style="padding-top: 1.25%;">
-          This project is help student who are doing Modern Application
-          Development II to complete the project with expertise. The project
+          This project is help student implement projects with expertise. The project
           help student delve deep in to architecture developing front-ends, 
           the project dives deeply in to design and implementation of web apps with Python,
           HTML, CSS, Javascript, SQL and frameworks such as Vue, Flask, Celery etc.
