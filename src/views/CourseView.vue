@@ -8,8 +8,8 @@
             <div class="accordion" id="accordionCourse">
                 <div class="accordion-item" v-for="each, index in courses['sessions']">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-                            :data-bs-target="'#collapse'+index" aria-expanded="true" :aria-controls="'collapseOne'+index">
+                        <button :class="['accordion-button', (index) ? 'collapsed' : '']" type="button" data-bs-toggle="collapse" 
+                            :data-bs-target="'#collapse'+index" aria-expanded="false" :aria-controls="'collapseOne'+index">
                             {{ each["name"] }}
                         </button>
                     </h2>
@@ -64,8 +64,5 @@
     main{
         display: flex;
         justify-content: center;
-    }
-    .accordion-item{
-        padding-top: 5px;
     }
 </style>

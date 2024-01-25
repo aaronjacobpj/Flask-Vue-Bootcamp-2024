@@ -49,6 +49,20 @@ const store = createStore({
                          "notes": "",
                          "slides": "",
                          "name": "Web Development Bootcamp Using Flask and HTML - Day 5"
+                        },
+                        {
+                            "source-code": "Day 6.zip",
+                            "youtube-video-id": "diCcyc-ihC0",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 6"
+                        },
+                        {
+                            "source-code": "Day 7.zip",
+                            "youtube-video-id": "1EoJMBCbCR4",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Git - Day 7"
                         }
                     ]
 
@@ -84,6 +98,34 @@ const store = createStore({
                          "notes": "",
                          "slides": "",
                          "name": "Web Development Bootcamp Using Flask and Vue - Day 3"
+                        },
+                        {
+                            "source-code": "Day 4.zip",
+                            "youtube-video-id": "UX0Rry3SLf4",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 4"
+                        },
+                        {
+                            "source-code": "Day 5.zip",
+                            "youtube-video-id": "WHHxp70GfHU",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 5"
+                        },
+                        {
+                            "source-code": "Day 6.zip",
+                            "youtube-video-id": "043mDEJAmQw",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 6"
+                        },
+                        {
+                            "source-code": "Day 7.zip",
+                            "youtube-video-id": "1EoJMBCbCR4",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Git - Day 7"
                         }
                     ]
                 }
