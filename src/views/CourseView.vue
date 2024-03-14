@@ -41,14 +41,16 @@
 </template>
 <script>
     export default{
-        props: ["name"],
+        props: ["year", "term", "name"],
         data()
         {
+            return {
 
+            };
         },
         computed:{
             courses(){
-                var items = store.getters.getCourses;
+                var items = store.getters.filterCourses(this.year, this.term);
                 
                 items = items.filter(each => each["name"] == this.name);
                 return items[0];

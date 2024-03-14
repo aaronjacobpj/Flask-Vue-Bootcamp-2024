@@ -12,7 +12,9 @@
         props: ["video"],
         data()
         {
-
+            return {
+                
+            };
         },
         computed:{
         }

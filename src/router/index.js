@@ -10,17 +10,24 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'main-home',
+      component: HomeView,
+      props: true
     },
     {
-      path: '/course/:name',
+      path: '/:year/:term',
+      name: 'home',
+      component: HomeView,
+      props: true,
+    },
+    {
+      path: '/:year/:term/course/:name',
       name: 'course',
       component: CourseView,
       props: true,
     },
     {
-      path: '/course/:name/video/:video',
+      path: '/:year/:term/course/:name/video/:video',
       name: 'course-video',
       component: CourseVideoView,
       props: true

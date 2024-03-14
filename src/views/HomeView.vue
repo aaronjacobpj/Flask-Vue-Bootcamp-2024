@@ -17,6 +17,5 @@
         </p>
       </div>
     </div>
-    
   </main>
 </template>
