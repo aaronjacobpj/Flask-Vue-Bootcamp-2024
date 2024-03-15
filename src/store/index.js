@@ -165,7 +165,7 @@ const store = createStore({
                             "youtube-video-id": "KrpTP611o-M",
                             "notes": "",
                             "slides": "",
-                            "name": "Web Development Bootcamp Using Flask and HTML - Day 2"
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 3"
                         },
                     ]
                 },
