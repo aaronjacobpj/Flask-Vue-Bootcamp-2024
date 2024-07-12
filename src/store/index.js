@@ -246,7 +246,36 @@ const store = createStore({
                             "name": "Web Development Bootcamp Using Flask and Vue - Day 6"
                         },
                     ]
-                }
+                },
+                {
+                    name: "Vue",
+                    "base-url": "/weeks/bootcamp/2024/July/MAD ll/",
+                    term: "July",
+                    year: 2024,
+                    sessions: [
+                        {
+                            "source-code": "day0.zip",
+                            "youtube-video-id": "P2dIj8udEzQ",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+                        },
+                        {
+                            "source-code": "day1.zip",
+                            "youtube-video-id": "mOLZreBcjIw",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+                        },
+                        {
+                            "source-code": "day2.zip",
+                            "youtube-video-id": "rn4Gp4N8xuA",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 2"
+                        },
+                    ]
+                },
             ]
         }
     },
