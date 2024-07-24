@@ -309,7 +309,7 @@ const store = createStore({
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and Vue - Day 7"
                         },
-
+                        {
                             "source-code": "day8.zip",
                             "youtube-video-id": "vwPRMVipwPI",
                             "notes": "",
