@@ -325,7 +325,7 @@ const store = createStore({
                         },
                         {
                             "source-code": "day10.zip",
-                            "youtube-video-id": "kPzhV96XLkI",
+                            "youtube-video-id": "COTr9u2Eb5I",
                             "notes": "",
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and Vue - Day 10"
