@@ -332,6 +332,37 @@ const store = createStore({
                         },
                     ]
                 },
+                {
+                    name: "Vue",
+                    "base-url": "/weeks/bootcamp/2024/September/MAD ll/",
+                    term: "September",
+                    year: 2024,
+                    sessions: [
+                        {
+                            "source-code": "day0.zip",
+                            "youtube-video-id": "c6udYJJSl4c",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+                        },
+                    ]
+                },
+                {
+                    name: "Flask",
+                    "base-url": "/weeks/bootcamp/2024/September/MAD l/",
+                    term: "September",
+                    year: 2024,
+                    sessions: [
+                        {
+                            "source-code": "day0.zip",
+                            "youtube-video-id": "I-2CQtxM-Jw",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 0"
+                        },
+                    ]
+                },
+
             ]
         }
     },
