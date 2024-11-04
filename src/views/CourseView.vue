@@ -37,6 +37,7 @@
                 </div>
             </div>
         </div>
+        {{store.state.check}}
     </main>
 </template>
 <script>

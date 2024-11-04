@@ -1,0 +1,85 @@
+{
+    "name": "Vue",
+    "base-url": "/weeks/bootcamp/2024/July/MAD ll/",
+    "term": "July",
+    "year": 2024,
+    "sessions": [
+        {
+            "source-code": "day0.zip",
+            "youtube-video-id": "P2dIj8udEzQ",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+        },
+        {
+            "source-code": "day1.zip",
+            "youtube-video-id": "mOLZreBcjIw",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+        },
+        {
+            "source-code": "day2.zip",
+            "youtube-video-id": "rn4Gp4N8xuA",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 2"
+        },
+        {
+            "source-code": "day3.zip",
+            "youtube-video-id": "lSR-wDe2mj0",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 3"
+        },
+        {
+            "source-code": "day4.zip",
+            "youtube-video-id": "0j6g_AjlpMA",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 4"
+        }, 
+        {
+            "source-code": "day5.zip",
+            "youtube-video-id": "iG4qLtVM5cg",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 5"
+        },
+        {
+            "source-code": "day6.zip",
+            "youtube-video-id": "rPFnOxjhFug",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 6"
+        },
+        {
+            "source-code": "day7.zip",
+            "youtube-video-id": "2SPdN6ft0TU",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 7"
+        },
+        {
+            "source-code": "day8.zip",
+            "youtube-video-id": "vwPRMVipwPI",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 8"
+        },
+        {
+            "source-code": "day9.zip",
+            "youtube-video-id": "kPzhV96XLkI",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 9"
+        },
+        {
+            "source-code": "day10.zip",
+            "youtube-video-id": "COTr9u2Eb5I",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 10"
+        }
+    ]
+}

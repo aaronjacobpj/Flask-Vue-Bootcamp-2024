@@ -1,0 +1,57 @@
+{
+    "name": "Flask",
+    "base-url": "/weeks/bootcamp/2024/March/MAD l/",
+    "term": "March",
+    "year": 2024,
+    "sessions": [
+        {
+            "source-code": "Day 0.zip",
+            "youtube-video-id": "FS0Pscydnqo",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 0"
+        },
+        {
+            "source-code": "Day 1.zip",
+            "youtube-video-id": "gFJ7ORRht6k",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 1"
+        },
+        {
+            "source-code": "Day 2.zip",
+            "youtube-video-id": "VZVaaFApmPo",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 2"
+        },
+        {
+            "source-code": "Day 3.zip",
+            "youtube-video-id": "KrpTP611o-M",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 3"
+        },
+        {
+            "source-code": "Day 4.zip",
+            "youtube-video-id": "EEOzBTOB9cw",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 4"
+        },
+        {
+            "source-code": "Day 5.zip",
+            "youtube-video-id": "y8TXcQ_I0Hg",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 5"
+        },
+        {
+            "source-code": "Day 6.zip",
+            "youtube-video-id": "_yVQe_WzsME",
+            "notes": "",
+            "slides": "",
+            "name": "Web Development Bootcamp Using Flask and HTML - Day 6"
+        }
+    ]
+}
