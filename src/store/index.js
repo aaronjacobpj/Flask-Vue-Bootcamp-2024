@@ -101,6 +101,27 @@ const store = createStore({
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and Vue - Day 10"
                         },
+                        {
+                            "source-code": "day11.zip",
+                            "youtube-video-id": "GDMmVEdwvmA",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 11"
+                        },
+                        {
+                            "source-code": "day12.zip",
+                            "youtube-video-id": "GDMmVEdwvmA",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and Vue - Day 12 (Appologies the video export failed.)"
+                        },
+                        {
+                            "source-code": "caching-and-celery-old.zip",
+                            "youtube-video-id": "COTr9u2Eb5I",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Caching and Celery"
+                        },
                     ]
                 }
 
