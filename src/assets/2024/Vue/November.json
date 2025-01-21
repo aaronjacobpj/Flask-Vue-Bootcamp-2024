@@ -101,6 +101,6 @@
             "notes": "",
             "slides": "",
             "name": "Caching and Celery"
-        },
+        }
     ]
 }
