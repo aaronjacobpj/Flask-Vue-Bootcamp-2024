@@ -29,10 +29,17 @@ const store = createStore({
                     sessions: [
                         {
                             "source-code": "day0.zip",
-                            "youtube-video-id": "eClCcpUt37s",
+                            "youtube-video-id": "r9GmWa4u3CI",
                             "notes": "",
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and HTML - Day 0"
+                        },
+                        {
+                            "source-code": "day1.zip",
+                            "youtube-video-id": "Bk9H1NE3LjM",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 1"
                         },
                     ]
                 }
