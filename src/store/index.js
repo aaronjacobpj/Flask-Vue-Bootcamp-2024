@@ -28,6 +28,13 @@ const store = createStore({
                     year: 2025,
                     sessions: [
                         {
+                            "source-code": "",
+                            "youtube-video-id": "1EoJMBCbCR4",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Git"
+                        },
+                        {
                             "source-code": "day0.zip",
                             "youtube-video-id": "r9GmWa4u3CI",
                             "notes": "",
@@ -40,6 +47,13 @@ const store = createStore({
                             "notes": "",
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and HTML - Day 1"
+                        },
+                        {
+                            "source-code": "day2.zip",
+                            "youtube-video-id": "eXBZp1uK50w",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 2"
                         },
                     ]
                 }
