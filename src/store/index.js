@@ -69,6 +69,13 @@ const store = createStore({
                             "slides": "",
                             "name": "Web Development Bootcamp Using Flask and HTML - Day 4"
                         },
+                        {
+                            "source-code": "day5.zip",
+                            "youtube-video-id": "40SQLzP8OFM",
+                            "notes": "",
+                            "slides": "",
+                            "name": "Web Development Bootcamp Using Flask and HTML - Day 5"
+                        },
                     ]
                 }
 
