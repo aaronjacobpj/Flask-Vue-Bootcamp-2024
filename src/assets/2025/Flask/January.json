@@ -1,9 +1,9 @@
 {
-    name: "Flask",
+    "name": "Flask",
     "base-url": "/weeks/bootcamp/2025/January/MAD l/",
-    term: "January",
-    year: 2025,
-    sessions: [
+    "term": "January",
+    "year": 2025,
+    "sessions": [
         {
             "source-code": "",
             "youtube-video-id": "1EoJMBCbCR4",
