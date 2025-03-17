@@ -26,7 +26,7 @@ const store = createStore({
                 flaskj25,
                 {
                     "name": "Vue",
-                        "base-url": "/weeks/bootcamp/2025/September/MAD ll/",
+                        "base-url": "/weeks/bootcamp/2025/March/MAD ll/",
                         "term": "March",
                         "year": 2025,
                         "sessions": [
