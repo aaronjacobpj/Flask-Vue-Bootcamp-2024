@@ -43,7 +43,7 @@ const store = createStore({
                 },
                 {
                     "name": "Flask",
-                    "base-url": "/weeks/bootcamp/2025/May/MAD l",
+                    "base-url": "/weeks/bootcamp/2025/May/MAD l/",
                     "term": "May",
                     "year": 2025,
                     "sessions": [
