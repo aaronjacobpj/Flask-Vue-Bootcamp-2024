@@ -34,7 +34,7 @@ const store = createStore({
                     "sessions": [
                             {
                                 "source-code": "day0.zip",
-                                "youtube-video-id": "1zSasOy9JiE",
+                                "youtube-video-id": "f1gLzgGHqgo",
                                 "notes": "",
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
