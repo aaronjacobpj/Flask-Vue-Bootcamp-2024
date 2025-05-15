@@ -63,21 +63,21 @@ const store = createStore({
                             },
                     ]
                 },
-                // {
-                //     "name": "Vue (Morning)",
-                //     "base-url": "/weeks/bootcamp/2025/May/MAD ll (Morning)/",
-                //     "term": "May",
-                //     "year": 2025,
-                //     "sessions": [
-                //             {
-                //                 "source-code": "day0.zip",
-                //                 "youtube-video-id": "1zSasOy9JiE",
-                //                 "notes": "",
-                //                 "slides": "",
-                //                 "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
-                //             },
-                //      ]
-                // }
+                {
+                    "name": "Vue (Morning)",
+                    "base-url": "/weeks/bootcamp/2025/May/MAD ll (Morning)/",
+                    "term": "May",
+                    "year": 2025,
+                    "sessions": [
+                            {
+                                "source-code": "day0.zip",
+                                "youtube-video-id": "6rsxC22BId4",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+                            },
+                     ]
+                }
 
             ]
         }
