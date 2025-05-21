@@ -33,6 +33,13 @@ const store = createStore({
                     "year": 2025,
                     "sessions": [
                             {
+                                "source-code": "",
+                                "youtube-video-id": "1EoJMBCbCR4",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Git"
+                            },
+                            {
                                 "source-code": "day0.zip",
                                 "youtube-video-id": "f1gLzgGHqgo",
                                 "notes": "",
@@ -97,6 +104,13 @@ const store = createStore({
                     "year": 2025,
                     "sessions": [
                             {
+                                "source-code": "",
+                                "youtube-video-id": "1EoJMBCbCR4",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and HTML - Git"
+                            },
+                            {
                                 "source-code": "day0.zip",
                                 "youtube-video-id": "euEnbr_TJiI",
                                 "notes": "",
@@ -125,6 +139,13 @@ const store = createStore({
                     "term": "May",
                     "year": 2025,
                     "sessions": [
+                            {
+                                "source-code": "",
+                                "youtube-video-id": "1EoJMBCbCR4",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Git"
+                            },
                             {
                                 "source-code": "day0.zip",
                                 "youtube-video-id": "6rsxC22BId4",
