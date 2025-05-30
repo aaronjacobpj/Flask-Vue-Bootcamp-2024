@@ -159,6 +159,13 @@ const store = createStore({
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and HTML - Day 4 (CRUD Operations)"
                             },
+                            {
+                                "source-code": "day5.zip",
+                                "youtube-video-id": "enErb_TGC0",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and HTML - Day 5 (CRUD Operations)"
+                            },
                     ]
                 },
                 {
@@ -201,6 +208,20 @@ const store = createStore({
                                 "notes": "",
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and Vue - Day 3"
+                            },
+                            {
+                                "source-code": "day4.zip",
+                                "youtube-video-id": "V6RUCa2spI8",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Day 4"
+                            },
+                            {
+                                "source-code": "day5.zip",
+                                "youtube-video-id": "G4VmAfv2QGg",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Day 5"
                             },
                      ]
                 }
