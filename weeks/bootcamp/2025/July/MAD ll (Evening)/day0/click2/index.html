@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    <script>
+        const app = Vue.createApp({
+            template: `
+                <h1>You have clicked {{ counter }} times!</h1>
+                <button v-on:click="count()">
+                    Click me
+                </button>
+            `,
+            data(){
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                count(){
+                    this.counter++
+                }
+            }
+        }).mount("#app");
+    </script>
+</html>
