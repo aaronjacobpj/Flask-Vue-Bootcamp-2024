@@ -245,6 +245,7 @@ const store = createStore({
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
                             },
+                    ]
                 },
                 {
                     "name": "Vue (Evening)",
@@ -259,6 +260,7 @@ const store = createStore({
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
                             },
+                    ]
                 }
             ]
         }
