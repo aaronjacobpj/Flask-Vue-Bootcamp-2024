@@ -239,11 +239,18 @@ const store = createStore({
                     "year": 2025,
                     "sessions": [
                             {
-                                "source-code": "",
+                                "source-code": "day0.zip",
                                 "youtube-video-id": "-IVLxh2c3ss",
                                 "notes": "",
                                 "slides": "",
                                 "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+                            },
+                            {
+                                "source-code": "day1.zip",
+                                "youtube-video-id": "5sx5aXDKgSA",
+                                "notes": "",
+                                "slides": "",
+                                "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
                             },
                     ]
                 },
@@ -254,7 +261,7 @@ const store = createStore({
                     "year": 2025,
                     "sessions": [
                             {
-                                "source-code": "",
+                                "source-code": "day0.zip",
                                 "youtube-video-id": "EpH57BaH90Y",
                                 "notes": "",
                                 "slides": "",
