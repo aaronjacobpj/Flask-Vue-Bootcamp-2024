@@ -1,0 +1,57 @@
+{
+    "name": "Flask",
+    "base-url": "/weeks/bootcamp/2025/May/MAD l/",
+    "term": "May",
+    "year": 2025,
+    "sessions": [
+            {
+                "source-code": "",
+                "youtube-video-id": "1EoJMBCbCR4",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Git"
+            },
+            {
+                "source-code": "day0.zip",
+                "youtube-video-id": "euEnbr_TJiI",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 0 (HTML and CSS)"
+            },
+            {
+                "source-code": "day1.zip",
+                "youtube-video-id": "gznd3flAwv0",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 1 (Flask)"
+            },
+            {
+                "source-code": "day2.zip",
+                "youtube-video-id": "dxg7ly-zp-w",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 2 (Models)"
+            },
+            {
+                "source-code": "day3.zip",
+                "youtube-video-id": "qcjYVc-4Zcw",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 3 (Session)"
+            },
+            {
+                "source-code": "day4.zip",
+                "youtube-video-id": "Gdgt658royQ",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 4 (CRUD Operations)"
+            },
+            {
+                "source-code": "day5.zip",
+                "youtube-video-id": "9enErb_TGC0",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and HTML - Day 5 (CRUD Operations)"
+            }
+    ]
+}

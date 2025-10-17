@@ -1,0 +1,50 @@
+{
+    "name": "Vue (Evening)",
+    "base-url": "/weeks/bootcamp/2025/May/MAD ll (Evening)/",
+    "term": "July",
+    "year": 2025,
+    "sessions": [
+            {
+                "source-code": "day0.zip",
+                "youtube-video-id": "EpH57BaH90Y",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+            },
+            {
+                "source-code": "day1.zip",
+                "youtube-video-id": "MlMPxT6wzNU",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+            },
+            {
+                "source-code": "day2.zip",
+                "youtube-video-id": "eqcFU06VBeM",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 2"
+            },
+            {
+                "source-code": "day3.zip",
+                "youtube-video-id": "kffooJZ26b4",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 3"
+            },
+            {
+                "source-code": "day4.zip",
+                "youtube-video-id": "B3t0T2Lj5is",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 4"
+            },
+            {
+                "source-code": "day5.zip",
+                "youtube-video-id": "QeHTveLXlr0",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 5"
+            }
+    ]
+}
