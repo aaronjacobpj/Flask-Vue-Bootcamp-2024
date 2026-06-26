@@ -15,7 +15,8 @@ import {default as vuemaymorn25} from "@/assets/2025/Vue/MayMorn.json";
 import {default as vuejulym25} from "@/assets/2025/Vue/JulyM.json";
 import {default as vuejulye25} from "@/assets/2025/Vue/JulyE.json";
 import {default as vueOct25} from "@/assets/2025/Vue/October.json";
-
+import {default as vuejunem26} from "@/assets/2026/Vue/JuneM.json";
+import {default as vuejunee26} from "@/assets/2026/Vue/JuneE.json";
 
 const store = createStore({
     state() {
@@ -36,7 +37,9 @@ const store = createStore({
                 vuemaymorn25,
                 vuejulym25,
                 vuejulye25,
-                vueOct25
+                vueOct25,
+                vuejunem26,
+                vuejunee26,
             ]
         }
     },

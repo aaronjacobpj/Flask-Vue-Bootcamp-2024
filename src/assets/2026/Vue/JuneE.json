@@ -1,0 +1,36 @@
+{
+    "name": "Vue (Evening)",
+    "base-url": "/weeks/bootcamp/2026/June/MAD ll (Evening)/",
+    "term": "June",
+    "year": 2026,
+    "sessions": [
+            {
+                "source-code": "day0.zip",
+                "youtube-video-id": "",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+            },
+            {
+                "source-code": "day1.zip",
+                "youtube-video-id": "",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+            },
+            {
+                "source-code": "day2.zip",
+                "youtube-video-id": "",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+            },
+            {
+                "source-code": "day3.zip",
+                "youtube-video-id": "",
+                "notes": "",
+                "slides": "",
+                "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
+            }
+    ]
+}
