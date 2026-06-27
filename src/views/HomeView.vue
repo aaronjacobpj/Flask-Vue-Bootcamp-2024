@@ -5,213 +5,311 @@
 <template>
   <main>
     <div class="container-fluid">
-        <h1> Hi, There!</h1>
-        <p style="padding-top: 1.25%;">
-          This project is help student implement projects with expertise. The project
-          help student delve deep in to architecture developing front-ends, 
-          the project dives deeply in to design and implementation of web apps with Python,
-          HTML, CSS, Javascript, SQL and frameworks such as Vue, Flask, Celery etc.
-          The topic include developing front-ends, database design, user experience 
-          and security.
-        </p>
+      <h1> Hi, There!</h1>
+      <p style="padding-top: 1.25%;">
+        This project is help student implement projects with expertise. The project
+        help student delve deep in to architecture developing front-ends,
+        the project dives deeply in to design and implementation of web apps with Python,
+        HTML, CSS, Javascript, SQL and frameworks such as Vue, Flask, Celery etc.
+        The topic include developing front-ends, database design, user experience
+        and security.
+      </p>
       <div>
-        <h1 id="project-walk-through" align="center">Project Walk Through</h1>
+        <h1 id="project-walk-through">Project Walk Through</h1>
         <p>After you go through the problem statement you can start with setting
-        upt the environment for the project inlcuding creating a virtual
-        environment in flask or in node. In our case we need the both, so you
-        can either start with node of python. So let start</p>
+          upt the environment for the project inlcuding creating a virtual
+          environment in flask or in node. In our case we need the both, so you
+          can either start with node of python. So let start</p>
         <h2 id="setting-up-the-environments">Setting up the environments</h2>
         <h3 id="frontend">Frontend</h3>
         <p>Because we are using vue3 we need make sure that we have node up and
-        running in our system.</p>
+          running in our system.</p>
         <p>If you haven’t done already, you can do it by accessing this link.
-        <a href="https://nodejs.org/en/download">Node js</a></p>
+          <a href="https://nodejs.org/en/download">Node js</a>
+        </p>
         <p>After installing the node js, you move on to creating vue
-        project.</p>
+          project.</p>
         <h4 id="creating-vue-project">Creating Vue project</h4>
         <p>you can create the vue project my running the command. this will take
-        care of creating the project and installing the basic packages that you
-        need to start working on your project.</p>
+          care of creating the project and installing the basic packages that you
+          need to start working on your project.</p>
         <pre><code>npm create vue@latest</code></pre>
         <p>the output look something like this.</p>
-        <p><img class="img-fluid col-7" src="/images/vue-setup.png"></p>
+        <p><img src="images/vue-setup.png"></p>
         <p>after that we can navigate to the frontend project folder.</p>
         <pre><code>cd &lt;project-name&gt;</code></pre>
         <p>now we are in the folder we have to install the packes to move
-        further. we can install all the packages by running the command…</p>
+          further. we can install all the packages by running the command…</p>
         <pre><code>npm install</code></pre>
         <p>after installing the packages we can test out the project by running
-        the development server as well.</p>
+          the development server as well.</p>
         <pre><code>npm run dev</code></pre>
         <p>now we are ready to make changes or our frontend project is ready for
-        us to make further modification that we can make our project.</p>
+          us to make further modification that we can make our project.</p>
         <p>while we develop our frontend we might encounter a situations like we
-        are need of installing new packages. But like in python installing the
-        package in node to is quite straight forward.</p>
+          are need of installing new packages. But like in python installing the
+          package in node to is quite straight forward.</p>
         <pre><code>npm install &lt;package-name@version&gt;</code></pre>
+        <h3 id="how-the-code-would-look-like">How the code would look like?</h3>
+        <h4 id="backend">Backend</h4>
+        <p><a href="https://flask.palletsprojects.com/en/stable/quickstart/#apis-with-json">Reference</a></p>
+        <pre><code>@app.route(&quot;/&lt;url&gt;&quot;, methods=[&quot;&lt;method-type&gt;&quot;]) 
+def function_name(): 
+    # get data from the user like form or json
+    # do necessary validation for each data attribute
+    # send appropirate response
+    # if the form is valid modify database if needed.
+    # return the final response</code></pre>
+        <h4 id="frontend-1">Frontend</h4>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Reference</a></p>
+        <pre><code>fetch(&quot;&lt;url&gt;&quot;, {
+    headers: {
+        &quot;Content-Type&quot;: &quot;type of data you are sending&quot;
+        // https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Type 
+        &quot;Authentication-Token&quot;: &lt;token&gt;
+        // https://flask-security-too.readthedocs.io/en/stable/configuration.html#SECURITY_TOKEN_AUTHENTICATION_HEADER
+    }
+}).then(r =&gt; {
+    if(r.status == 200){
+        r.json().then(x =&gt; {
+            // do something with the data
+        })
+    }
+})    </code></pre>
       </div>
-    </div>
   </main>
 </template>
 <style scoped>
-    html {
+  html {
     color: #1a1a1a;
     background-color: #fdfdfd;
-    }
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 36em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+  }
+
+  @media (max-width: 600px) {
     body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
+      font-size: 0.9em;
+      padding: 12px;
     }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
+
+    h1 {
+      font-size: 1.8em;
     }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
+  }
+
+  @media print {
+    html {
+      background-color: white;
     }
-    p {
-      margin: 1em 0;
+
+    body {
+      background-color: transparent;
+      color: black;
+      font-size: 12pt;
     }
-    a {
-      color: #1a1a1a;
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
     }
-    a:visited {
-      color: #1a1a1a;
+
+    h2,
+    h3,
+    h4 {
+      page-break-after: avoid;
     }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #1a1a1a;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  a {
+    color: #1a1a1a;
+  }
+
+  a:visited {
+    color: #1a1a1a;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  svg {
+    height: auto;
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.4em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+    font-style: italic;
+  }
+
+  h6 {
+    font-weight: normal;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.7em;
+    margin-top: 1em;
+  }
+
+  li>ol,
+  li>ul {
+    margin-top: 0;
+  }
+
+  blockquote {
+    margin: 1em 0 1em 1.7em;
+    padding-left: 1em;
+    border-left: 2px solid #e6e6e6;
+    color: #606060;
+  }
+
+  code {
+    font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+    font-size: 85%;
+    margin: 0;
+    hyphens: manual;
+  }
+
+  pre {
+    margin: 1em 0;
+    overflow: auto;
+  }
+
+  pre code {
+    padding: 0;
+    overflow: visible;
+    overflow-wrap: normal;
+  }
+
+  .sourceCode {
+    background-color: transparent;
+    overflow: visible;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    height: 1px;
+    margin: 1em 0;
+  }
+
+  table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  table caption {
+    margin-bottom: 0.75em;
+  }
+
+  tbody {
+    margin-top: 0.5em;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  th {
+    border-top: 1px solid #1a1a1a;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+  }
+
+  td {
+    padding: 0.125em 0.5em 0.25em 0.5em;
+  }
+
+  header {
+    margin-bottom: 4em;
+    text-align: center;
+  }
+
+  #TOC li {
+    list-style: none;
+  }
+
+  #TOC ul {
+    padding-left: 1.3em;
+  }
+
+  #TOC>ul {
+    padding-left: 0;
+  }
+
+  #TOC a:not(:hover) {
+    text-decoration: none;
+  }
+
+  code {
+    white-space: pre-wrap;
+  }
+
+  span.smallcaps {
+    font-variant: small-caps;
+  }
+
+  div.columns {
+    display: flex;
+    gap: min(4vw, 1.5em);
+  }
+
+  div.column {
+    flex: auto;
+    overflow-x: auto;
+  }
+
+  div.hanging-indent {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+  }
+
+  /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  ul.task-list[class] {
+    list-style: none;
+  }
+
+  ul.task-list li input[type="checkbox"] {
+    font-size: inherit;
+    width: 0.8em;
+    margin: 0 0.8em 0.2em -1.6em;
+    vertical-align: middle;
+  }
+
+  .display.math {
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
 </style>
