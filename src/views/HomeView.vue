@@ -36,7 +36,7 @@
           need to start working on your project.</p>
         <pre><code>npm create vue@latest</code></pre>
         <p>the output look something like this.</p>
-        <p><img src="images/vue-setup.png"></p>
+        <p><img src="/images/vue-setup.png"></p>
         <p>after that we can navigate to the frontend project folder.</p>
         <pre><code>cd &lt;project-name&gt;</code></pre>
         <p>now we are in the folder we have to install the packes to move
