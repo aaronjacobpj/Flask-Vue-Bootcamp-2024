@@ -14,6 +14,7 @@
         The topic include developing front-ends, database design, user experience
         and security.
       </p>
+    </div>
       <div>
         <h1 id="project-walk-through">Project Walk Through</h1>
         <p>After you go through the problem statement you can start with setting
