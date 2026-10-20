@@ -1,0 +1,15 @@
+{
+    "name": "Vue",
+    "base-url": "/weeks/bootcamp/2026/October/MAD ll/",
+    "term": "October",
+    "year": 2026,
+    "sessions": [
+        {
+            "source-code": "day0.zip",
+            "youtube-video-id": "",
+            "notes": "",
+            "slides": "/weeks/bootcamp/2026/October/MAD ll/day0-slides.pdf",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+        }
+    ]
+}
