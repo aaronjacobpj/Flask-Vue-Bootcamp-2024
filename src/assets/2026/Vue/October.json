@@ -10,6 +10,13 @@
             "notes": "",
             "slides": "/weeks/bootcamp/2026/October/MAD ll/day0-slides.pdf",
             "name": "Web Development Bootcamp Using Flask and Vue - Day 0"
+        },
+        {
+            "source-code": "day1.zip",
+            "youtube-video-id": "",
+            "notes": "",
+            "slides": "/weeks/bootcamp/2026/October/MAD ll/day1-slides.pdf",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 1"
         }
     ]
 }
