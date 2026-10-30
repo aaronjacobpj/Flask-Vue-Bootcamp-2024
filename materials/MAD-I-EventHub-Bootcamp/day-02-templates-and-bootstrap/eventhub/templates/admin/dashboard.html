@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Admin &middot; EventHub{% endblock %}
+
+{% block content %}
+<h1 class="h3 mb-3">Admin dashboard</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr><th>#</th><th>Event</th><th>Venue</th><th>Date</th><th class="text-end">Price (&#8377;)</th><th class="text-end">Seats left</th></tr>
+    </thead>
+    <tbody>
+      {% for event in events %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ event.title }}</td>
+        <td>{{ event.venue }}, {{ event.city }}</td>
+        <td>{{ event.date }}</td>
+        <td class="text-end">{{ event.price }}</td>
+        <td class="text-end">{{ event.seats_left }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<p class="text-muted small">Total events: {{ events | length }}</p>
+{% endblock %}

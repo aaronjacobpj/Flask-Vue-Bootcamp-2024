@@ -1,0 +1,9 @@
+/* Keep custom CSS small: Bootstrap does most of the work. */
+body {
+  background-color: #f7f7f9;
+  min-height: 100vh;
+}
+
+.card-title {
+  font-weight: 600;
+}

@@ -38,6 +38,20 @@
             "notes": "",
             "slides": "",
             "name": "Web Development Bootcamp Using Flask and Vue - Day 4"
+        },
+        {
+            "source-code": "day5.zip",
+            "youtube-video-id": "",
+            "notes": "",
+            "slides": "/weeks/bootcamp/2026/October/MAD ll/day5-slides.pdf",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 5"
+        },
+        {
+            "source-code": "day6.zip",
+            "youtube-video-id": "",
+            "notes": "",
+            "slides": "/weeks/bootcamp/2026/October/MAD ll/day6-slides.pdf",
+            "name": "Web Development Bootcamp Using Flask and Vue - Day 6"
         }
     ]
 }

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}My bookings &middot; EventHub{% endblock %}
+
+{% block content %}
+<h1 class="h3 mb-3">My bookings</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr><th>Event</th><th>Venue</th><th>Event date</th><th class="text-end">Seats</th><th class="text-end">Total (&#8377;)</th><th>Status</th><th></th></tr>
+    </thead>
+    <tbody>
+      {% for booking in bookings %}
+      <tr>
+        <td>{{ booking.event.title }}</td>
+        <td>{{ booking.event.venue.name }}</td>
+        <td>{{ booking.event.date_time.strftime("%d %b %Y, %I:%M %p") }}</td>
+        <td class="text-end">{{ booking.seats }}</td>
+        <td class="text-end">{{ "%.0f" | format(booking.total_price) }}</td>
+        <td>
+          {% if booking.status == "cancelled" %}
+            <span class="badge text-bg-secondary">cancelled</span>
+          {% elif booking.event.is_upcoming %}
+            <span class="badge text-bg-success">upcoming</span>
+          {% else %}
+            <span class="badge text-bg-light">attended</span>
+          {% endif %}
+        </td>
+        <td class="text-end">
+          {% if booking.status == "booked" and booking.event.is_upcoming %}
+          <form method="post" action="{{ url_for('user.cancel', booking_id=booking.id) }}"
+                onsubmit="return confirm('Cancel this booking?');">
+            <button class="btn btn-sm btn-outline-danger">Cancel</button>
+          </form>
+          {% endif %}
+        </td>
+      </tr>
+      {% else %}
+      <tr><td colspan="7" class="text-muted">No bookings yet. <a href="{{ url_for('user.index') }}">Browse events</a>.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

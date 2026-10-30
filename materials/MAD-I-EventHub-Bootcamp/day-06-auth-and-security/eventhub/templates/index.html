@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Events &middot; EventHub{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+  <h1 class="h3 mb-0">Upcoming events</h1>
+  {# GET form: the search term goes into the URL as ?q=... #}
+  <form method="get" action="{{ url_for('user.index') }}" class="d-flex gap-2" role="search">
+    <input type="search" name="q" value="{{ q }}" class="form-control" placeholder="Event, venue or city">
+    <button class="btn btn-outline-primary" type="submit">Search</button>
+  </form>
+</div>
+
+{% if q %}
+<p class="text-muted">{{ events | length }} result(s) for "{{ q }}" &middot; <a href="{{ url_for('user.index') }}">clear</a></p>
+{% endif %}
+
+<div class="row g-3">
+  {% for event in events %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h2 class="h5 card-title">{{ event.title }}</h2>
+        <p class="card-text text-muted mb-1">{{ event.venue.name }}, {{ event.venue.city }}</p>
+        <p class="card-text mb-2">{{ event.date_time.strftime("%d %b %Y, %I:%M %p") }}</p>
+        <p class="mb-0">
+          {% if event.price == 0 %}
+            <span class="badge text-bg-success">Free</span>
+          {% else %}
+            <span class="badge text-bg-primary">&#8377;{{ "%.0f" | format(event.price) }}</span>
+          {% endif %}
+
+          {% if event.seats_left > 0 %}
+            <span class="badge text-bg-light">{{ event.seats_left }} seats left</span>
+          {% else %}
+            <span class="badge text-bg-danger">Sold out</span>
+          {% endif %}
+        </p>
+      </div>
+      <div class="card-footer bg-transparent border-0 pb-3">
+        {% if current_user.is_authenticated and current_user.is_admin %}
+          <a href="{{ url_for('admin.edit_event', event_id=event.id) }}" class="btn btn-sm btn-outline-secondary">Edit</a>
+        {% elif event.seats_left > 0 %}
+          <a href="{{ url_for('user.book', event_id=event.id) }}" class="btn btn-sm btn-primary">Book</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <p class="text-muted">No upcoming events found.</p>
+  {% endfor %}
+</div>
+{% endblock %}

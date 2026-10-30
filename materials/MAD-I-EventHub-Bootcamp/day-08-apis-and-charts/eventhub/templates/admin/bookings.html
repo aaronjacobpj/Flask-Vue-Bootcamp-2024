@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}All bookings &middot; EventHub{% endblock %}
+
+{% block content %}
+<h1 class="h3 mb-3">All bookings</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped table-sm align-middle">
+    <thead>
+      <tr><th>Booked on</th><th>User</th><th>Event</th><th>Venue</th><th class="text-end">Seats</th><th class="text-end">Total (&#8377;)</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      {% for booking in bookings %}
+      <tr>
+        <td>{{ booking.booked_at.strftime("%d %b %Y, %I:%M %p") }}</td>
+        <td>{{ booking.user.name }}</td>
+        <td>{{ booking.event.title }}</td>
+        <td>{{ booking.event.venue.name }}</td>
+        <td class="text-end">{{ booking.seats }}</td>
+        <td class="text-end">{{ "%.0f" | format(booking.total_price) }}</td>
+        <td><span class="badge {{ 'text-bg-success' if booking.status == 'booked' else 'text-bg-secondary' }}">{{ booking.status }}</span></td>
+      </tr>
+      {% else %}
+      <tr><td colspan="7" class="text-muted">No bookings yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

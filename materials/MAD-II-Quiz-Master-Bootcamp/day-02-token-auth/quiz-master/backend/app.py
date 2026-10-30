@@ -1,0 +1,56 @@
+import os
+
+from flask import Flask, jsonify
+from flask_cors import CORS
+from flask_security import SQLAlchemyUserDatastore
+
+from config import Config
+from application.extensions import db, security
+from application.models import User, Role
+from application.seed import seed_database
+
+
+def create_app(config_class=Config):
+    app = Flask(__name__)
+    app.config.from_object(config_class)
+    os.makedirs(os.path.join(app.root_path, "instance"), exist_ok=True)
+
+    # --- extensions ---
+    db.init_app(app)
+    datastore = SQLAlchemyUserDatastore(db, User, Role)
+    security.init_app(app, datastore, register_blueprint=False)
+    # Allow the Vue dev server (different origin) to call /api/*
+    CORS(app, #resources={r"/api/*": {"origins": [app.config["FRONTEND_ORIGIN"]]}},
+         allow_headers=["Content-Type", "Authentication-Token"])
+
+    # Always answer auth failures with JSON (not HTML redirects)
+    @security.unauthn_handler
+    def unauthenticated(mechanisms=None, headers=None):
+        return jsonify(message="Authentication required. Please log in."), 401
+
+    @security.unauthz_handler
+    def unauthorized(func_name=None, params=None):
+        return jsonify(message="You are not allowed to access this resource."), 403
+
+    # --- blueprints ---
+    from application.api.auth import auth_bp
+    app.register_blueprint(auth_bp)
+
+    @app.get("/api/health")
+    def health():
+        return jsonify(status="ok")
+
+    @app.errorhandler(404)
+    def not_found(e):
+        return jsonify(message="Not found"), 404
+
+    with app.app_context():
+        seed_database()
+
+    return app
+
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(debug=True)

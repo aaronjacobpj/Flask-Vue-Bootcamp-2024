@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% set editing = event.id is not none %}
+{% block title %}{{ "Edit" if editing else "New" }} event &middot; EventHub{% endblock %}
+
+{% block content %}
+{% set selected_venue = request.form.get('venue_id', event.venue_id) | string %}
+{% set dt_value = request.form.get('date_time', event.date_time.strftime('%Y-%m-%dT%H:%M') if event.date_time else '') %}
+<div class="row justify-content-center">
+  <div class="col-12 col-md-8 col-lg-6">
+    <h1 class="h3 mb-3">{{ "Edit event" if editing else "New event" }}</h1>
+    <form method="post" class="card card-body shadow-sm">
+      <div class="mb-3">
+        <label for="venue_id" class="form-label">Venue</label>
+        <select class="form-select" id="venue_id" name="venue_id" required>
+          <option value="">Choose a venue</option>
+          {% for venue in venues %}
+          <option value="{{ venue.id }}" {{ "selected" if selected_venue == venue.id | string }}>
+            {{ venue.name }}, {{ venue.city }} (capacity {{ venue.capacity }})
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required maxlength="120"
+               value="{{ request.form.get('title', event.title or '') }}">
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description <span class="text-muted">(optional)</span></label>
+        <textarea class="form-control" id="description" name="description" rows="3">{{ request.form.get('description', event.description or '') }}</textarea>
+      </div>
+      <div class="mb-3">
+        <label for="date_time" class="form-label">Date and time</label>
+        <input type="datetime-local" class="form-control" id="date_time" name="date_time" required
+               value="{{ dt_value }}">
+      </div>
+      <div class="row">
+        <div class="col-6 mb-3">
+          <label for="price" class="form-label">Price (&#8377;)</label>
+          <input type="number" class="form-control" id="price" name="price" required min="0" step="1"
+                 value="{{ request.form.get('price', '%.0f' | format(event.price) if event.price is not none else '') }}">
+        </div>
+        <div class="col-6 mb-3">
+          <label for="total_seats" class="form-label">Seats</label>
+          <input type="number" class="form-control" id="total_seats" name="total_seats" required min="1"
+                 value="{{ request.form.get('total_seats', event.total_seats or '') }}">
+        </div>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{{ url_for('admin.dashboard') }}" class="btn btn-outline-secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
